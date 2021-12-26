@@ -40,6 +40,8 @@ def sendRecv(sock):
     sock.send(b"QUIT\r\n")
     recv = sock.recv(1024)
     print(recv)
+    
+    
 def main():
     sock = socket.socket()
     try:
